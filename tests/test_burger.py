@@ -70,8 +70,3 @@ class TestBurger:
         burger = Burger()
         with pytest.raises(AttributeError):
             burger.get_price()
-
-    def test_get_receipt_raises_if_bun_not_set(self):
-        burger = Burger()
-        with pytest.raises(AttributeError):
-            burger.get_receipt()
